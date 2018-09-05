@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev1": "set NODE_PATH=./lib&& nodemon --watch ./lib --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
     "eslint-plugin-react": "^7.10.0",
     "jest": "^23.4.2"
   },
